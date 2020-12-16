@@ -1,0 +1,20 @@
+body{
+  background-color: black;
+  text-align: center;
+}
+
+h1{
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+.navbar{
+  border-bottom: 2px solid white;
+}
+
+#logo{
+  margin: 20px 20px;
+}
