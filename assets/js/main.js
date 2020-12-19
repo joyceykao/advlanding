@@ -15,3 +15,9 @@ const fetchUserString = () => {
 };
 
 fetchUserString();
+
+// let navPlaceholder = document.querySelector("#nav-placeholder");
+// navPlaceholder.load("../../navbar.html");
+// $(function(){
+//   $("#nav-placeholder").load("../../navbar.html");
+// });
