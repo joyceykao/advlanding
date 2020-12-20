@@ -33,24 +33,26 @@ footer, a{
   background-color: black;
 }
 
-.cards {
-  display: flex;
-  justify-content: center;
-  margin: 30px 30px auto;
+.card, a:hover{
+  background-color: #2F80A9;
+  text-decoration: none;
 }
 
 .card {
-  margin: 16px  auto;
   height: 350px;
   border-radius: 3px;
-  box-shadow: 0 0 5px rgb(230,230,230);
   justify-content: center;
   text-align: center;
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(255,255,255);
   position: relative;
+  background-color: black;
 }
 
 
 #logo{
   margin: 20px 20px;
+}
+
+#middle-image-video{
+  border: none;
 }
