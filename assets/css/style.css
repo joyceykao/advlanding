@@ -7,7 +7,7 @@ body{
   padding-top: 65px;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   font-family: Open Sans;
   color: white;
 }
@@ -28,6 +28,13 @@ footer{
 footer, a{
   font-family: Raleway;
   color: white;
+}
+
+.avatar{
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .navbar{
@@ -52,6 +59,16 @@ footer, a{
 
 .highlight-box{
   border: 1px solid rgb(255,255,255);
+}
+
+.btn-outline-primary{
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-primary:hover{
+  background-color: #2F80A9;
+  border-color: white;
 }
 
 #logo{

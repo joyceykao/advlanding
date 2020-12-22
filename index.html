@@ -15,32 +15,30 @@
 <body>
 
 <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="./assets/media/cocktail.svg" alt="" width="30" height="24">
-      </a>
-       <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="workflows.html">Workflows</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:test@mail.com?" tabindex="-1" aria-disabled="true">Contact</a>
-          </li>
-        </ul>
-      </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html"><img src="./assets/media/cocktail.svg" alt="" width="30" height="24"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="workflows.html">Workflows</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:test@mail.com?">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <!-- Logo -->
   <img src="./assets/media/cocktail.svg" alt="" id="logo" width="300">
@@ -55,14 +53,14 @@
 <!-- Cards to About Us and Workflows -->
   <div class="container">
     <div class="center flex-row d-lg-flex justify-content-between">
-      <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3" href="aboutus.html">
+      <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" href="aboutus.html">
         <h2>About Us</h2>
         <p>The people and research behind FEZ who keep the community running.</p>
       </a>
 
       <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-3" id="middle-image-video">IMAGE/VIDEO HERE</div>
 
-      <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3" href="workflows.html">
+      <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" href="workflows.html">
         <h2>Workflows</h2>
         <p>Explore finite element analysis workflows in our GitHub community.</p>
       </a>
@@ -93,6 +91,10 @@
     </div>
   </footer>
 
+<!-- JS scripts needed for Boostrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
