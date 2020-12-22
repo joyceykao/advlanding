@@ -20,9 +20,11 @@ p{
 nav{
   font-family: Raleway;
 }
+
 footer{
   border-top: 2px solid white;
 }
+
 footer, a{
   font-family: Raleway;
   color: white;
@@ -38,7 +40,7 @@ footer, a{
   text-decoration: none;
 }
 
-.card {
+.card{
   height: 350px;
   border-radius: 3px;
   justify-content: center;
@@ -48,6 +50,9 @@ footer, a{
   background-color: black;
 }
 
+.highlight-box{
+  border: 1px solid rgb(255,255,255);
+}
 
 #logo{
   margin: 20px 20px;
