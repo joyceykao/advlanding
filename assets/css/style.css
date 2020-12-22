@@ -1,5 +1,10 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap');
+
+/*Font Awesome Icons*/
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+
 /* Utilities */
 body{
   background-color: black;
@@ -15,6 +20,12 @@ h1, h2, h3, h4{
 p{
   font-family: Raleway;
   color: white;
+}
+
+i:hover, a:hover{
+  color: #2F80A9;
+  text-decoration: none;
+  background-color: black;
 }
 
 nav{
@@ -57,6 +68,10 @@ footer, a{
   background-color: black;
 }
 
+.member-card{
+  margin: 32px;
+}
+
 .highlight-box{
   border: 1px solid rgb(255,255,255);
 }
@@ -69,6 +84,10 @@ footer, a{
 .btn-outline-primary:hover{
   background-color: #2F80A9;
   border-color: white;
+}
+
+.founder-bio-card{
+  margin-bottom: 32px;
 }
 
 #logo{
