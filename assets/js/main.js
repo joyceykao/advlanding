@@ -14,15 +14,17 @@ const addtoList = (link, name, owner, updated, stars, watchers, description) => 
           <p><em>Stars</em> <br><i class="far fa-star"></i> ${stars}</p>
           <p><em>Watching</em> <br><i class="far fa-eye"></i> ${watchers}</p>
         </div>
+        <div class="container">
         <p class="mb-0"><em>Description:</em></p>
         ${formatDescription(description)}
+        </div>
     </a>
     `;
   results.insertAdjacentHTML("beforeend", newListItem);
 };
 
 const fetchUserString = () => {
-  fetch(`https://api.github.com/orgs/openinnovationlifesciences/repos`)
+  fetch(`https://api.github.com/orgs/FEZ-Finite-Element-Zurich/repos`)
   .then(response => response.json())
   .then((data) => {
       data.forEach(element => addtoList(element.html_url, element.name, element.owner.login, element.updated_at, element.stargazers_count, element.watchers_count, element.description)) ;
@@ -33,7 +35,7 @@ fetchUserString();
 
 const formatDescription = (description) => {
   if (description == null) {
-    return "<p><em>None</em></p>";
+    return `<p class="container" style="height:25vh;"><em>None</em></p>`;
   } else {
     return `<p class="container" id="workflow-description">${description}</p>`;
   };

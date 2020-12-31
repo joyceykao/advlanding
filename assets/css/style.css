@@ -109,3 +109,13 @@ footer, a{
   overflow-y: auto;
   text-overflow: ellipsis;
 }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgb(220, 220, 220, 1);
+  -webkit-box-shadow: 0 0 1px rgb(0, 0, 0, 0.5);
+}
