@@ -59,7 +59,7 @@ footer, a{
 }
 
 .card{
-  min-height: 350px;
+  height: 350px;
   border-radius: 3px;
   justify-content: center;
   text-align: center;
