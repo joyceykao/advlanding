@@ -116,6 +116,7 @@ footer, a{
   -webkit-appearance: none;
   width: 7px;
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgb(220, 220, 220, 1);
