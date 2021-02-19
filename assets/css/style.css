@@ -78,6 +78,10 @@ footer, a{
   border: 1px solid rgb(255,255,255);
 }
 
+.btn-primary{
+  background-color: #2F80A9;
+}
+
 .btn-outline-primary{
   color: white;
   border-color: white;
