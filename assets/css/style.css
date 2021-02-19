@@ -55,6 +55,10 @@ footer, a{
   background-color: white;
 }
 
+.avatar:hover{
+  background-color: white;
+}
+
 .navbar{
   border-bottom: 2px solid white;
   background-color: black;
