@@ -22,6 +22,11 @@ p{
   color: white;
 }
 
+img:hover, a:hover{
+  text-decoration: none;
+  background-color: black;
+}
+
 i:hover, a:hover{
   color: #2F80A9;
   text-decoration: none;
