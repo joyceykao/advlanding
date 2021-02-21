@@ -5,7 +5,7 @@ const addtoList = (link, name, owner, updated, stars, watchers, description) => 
   const newListItem =
     `
     <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" id="workflow" target="_blank" href="${link}">
-        <h5>${name}</h5>
+        <h5 style="font-size:2.5vw;">${name}</h5>
         <div class="container">
         <p class="mb-0" style="font-size:small;""><em>Owner:</em><br>${owner}</p>
         <p class="mb-0" style="font-size:small;"><em>last updated:</em> ${updated.split('T')[0]}</p>
