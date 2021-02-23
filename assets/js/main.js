@@ -1,13 +1,12 @@
-console.log("hello");
 let results = document.querySelector("#results");
-const addtoList = (link, name, owner, updated, stars, watchers, description) => {
+const addtoList = (link, name, contributorInfo, updated, stars, watchers, description) => {
   // results.empty();
   const newListItem =
     `
     <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" id="workflow" target="_blank" href="${link}">
         <h5 style="font-size:medium;" class="mt-1">${name}</h5>
         <div class="container">
-        <p class="mb-0" style="font-size:small;"><em>Owner:</em><br>${owner}</p>
+        <p class="mb-0" style="font-size:small;"><em>Contributor:</em><br>${contributorInfo.join(', ')}</p>
         <p class="mb-0" style="font-size:small;"><em>last updated:</em> ${updated.split('T')[0]}</p>
         </div>
         <div class="container-fluid d-flex align-items-center justify-content-around ">
@@ -34,20 +33,30 @@ const fetchRepoString = () => {
 fetchRepoString();
 
 const processRepoData = (html_url, name, owner_login, updated_at, watchers_count, stargazers_count, description, contributors_url) => {
-        addtoList(html_url, name, owner_login, updated_at, watchers_count, stargazers_count, description);
-        // console.log(contributors_url);
-        fetchContributorString(contributors_url);
+        fetchContributorString(contributors_url)
+          .then((contributorInfo) => {
+            console.log(contributorInfo);
+            addtoList(html_url, name, contributorInfo, updated_at, watchers_count, stargazers_count, description);
+          });
 };
 
-const fetchContributorString = (contributorApi) => {
-  fetch(contributorApi)
-  .then(response=> response.json())
-  .then((data) => {
-    let contributorInfo = [];
-    console.log(data);
-    data.forEach(element => contributorInfo.push([element.login, element.html_url]));
-    console.log(contributorInfo);
-  });
+// const fetchContributorString = (contributorApi) => {
+//   fetch(contributorApi)
+//   .then(response=> response.json())
+//   .then((data) => {
+//     let contributorInfo = [];
+//     data.forEach(element => contributorInfo.push([element.login, element.url]));
+//     console.log(contributorInfo);
+//     return contributorInfo;
+//   });
+// }
+
+let fetchContributorString = async (contributorApi) => {
+  let response = await fetch (contributorApi);
+  let data = await response.json();
+  let contributorInfo = [];
+  data.forEach(element => contributorInfo.push(element.login));
+  return contributorInfo;
 }
 
 const formatDescription = (description) => {
