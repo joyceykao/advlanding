@@ -120,7 +120,7 @@ footer, a{
 
 #workflow-description{
   background-color: rgb(100,100,100);
-  height: 25vh;
+  height: 165px;
   overflow-y: auto;
   text-overflow: ellipsis;
 }

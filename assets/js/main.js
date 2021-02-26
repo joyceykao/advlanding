@@ -5,7 +5,7 @@ let results = document.querySelector("#results");
 const addtoList = (link, name, contributorInfo, updated, stars, watchers, description) => {
   const newListItem =
     `
-    <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" id="workflow" target="_blank" href="${link}">
+    <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex align-items-center justify-content-around" id="workflow" target="_blank" href="${link}">
         <h5 style="font-size:medium;" class="mt-1">${name}</h5>
         <div class="container">
         <p class="mb-0" style="font-size:small;"><em>Contributor:</em><br>${contributorInfo.join(', ')}</p>
@@ -21,7 +21,9 @@ const addtoList = (link, name, contributorInfo, updated, stars, watchers, descri
         </div>
     </a>
     `;
-  results.insertAdjacentHTML("beforeend", newListItem);
+    if (name != "FEZ-Main-Info" && name != "advlanding"){
+    results.insertAdjacentHTML("beforeend", newListItem);
+    };
 };
 
 // Using the GH API, this function fetches information on all of the repositories on the FEZ community
