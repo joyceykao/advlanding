@@ -23,15 +23,31 @@ const addtoList = (link, name, owner, updated, stars, watchers, description) => 
   results.insertAdjacentHTML("beforeend", newListItem);
 };
 
-const fetchUserString = () => {
+const fetchRepoString = () => {
   fetch(`https://api.github.com/orgs/FEZ-Finite-Element-Zurich/repos`)
   .then(response => response.json())
   .then((data) => {
-      data.forEach(element => addtoList(element.html_url, element.name, element.owner.login, element.updated_at, element.stargazers_count, element.watchers_count, element.description)) ;
+      data.forEach(element => processRepoData(element.html_url, element.name, element.owner.login, element.updated_at, element.stargazers_count, element.watchers_count, element.description, element.contributors_url)) ;
     });
 };
 
-fetchUserString();
+fetchRepoString();
+
+const processRepoData = (html_url, name, owner_login, updated_at, watchers_count, stargazers_count, description, contributors_url) => {
+        addtoList(html_url, name, owner_login, updated_at, watchers_count, stargazers_count, description);
+        // console.log(contributors_url);
+        fetchContributorString(contributors_url);
+};
+
+const fetchContributorString = (contributorApi) => {
+  fetch(contributorApi)
+  .then(response=> response.json())
+  .then((data) => {
+    let contributorInfo = [];
+    data.forEach(element => contributorInfo.push([element.login, element.html_url]));
+    console.log(contributorInfo);
+  });
+}
 
 const formatDescription = (description) => {
   if (description == null) {
