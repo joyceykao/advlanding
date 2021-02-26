@@ -21,7 +21,7 @@ const addtoList = (link, name, contributorInfo, updated, stars, watchers, descri
         </div>
     </a>
     `;
-    if (name != "FEZ-Main-Info" && name != "advlanding"){
+    if (name != "FEZ-Main-Info" && name != "advlanding" && name != "fez-finite-element-zurich.github.io"){
     results.insertAdjacentHTML("beforeend", newListItem);
     };
 };
