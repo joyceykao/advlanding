@@ -5,6 +5,8 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 
+@import 'footer.css';
+
 /* Utilities */
 body{
   background-color: black;
@@ -20,6 +22,11 @@ h1, h2, h3, h4, h5{
 p{
   font-family: Raleway;
   color: white;
+}
+
+img:hover, a:hover{
+  text-decoration: none;
+  background-color: black;
 }
 
 i:hover, a:hover{
@@ -47,6 +54,10 @@ footer, a{
   height: 200px;
   border-radius: 50%;
   object-fit: scale-down;
+  background-color: white;
+}
+
+.avatar:hover{
   background-color: white;
 }
 
@@ -78,6 +89,10 @@ footer, a{
   border: 1px solid rgb(255,255,255);
 }
 
+.btn-primary{
+  background-color: #2F80A9;
+}
+
 .btn-outline-primary{
   color: white;
   border-color: white;
@@ -107,7 +122,7 @@ footer, a{
 
 #workflow-description{
   background-color: rgb(100,100,100);
-  height: 25vh;
+  height: 165px;
   overflow-y: auto;
   text-overflow: ellipsis;
 }
