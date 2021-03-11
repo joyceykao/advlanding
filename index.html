@@ -7,9 +7,26 @@
   <link rel="shortcut icon" href="assets/media/favicon.jpeg" type="image/x-icon">
   <meta name="description" content="A virtual hub to share finite element analysis workflows for biomechanics research">
 
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Finite Element Zürich (FEZ)">
+  <meta property="og:description" content="A virtual hub to share finite element analysis workflows for biomechanics research">
+  <meta property="og:image" content="https://joyceykao.github.io/advlanding/assets/media/SM_logo.jpg">
+  <meta name="twitter:image" content="https://joyceykao.github.io/advlanding/assets/media/SM_logo.jpg" type="image/png">
+  <meta property="og:url" content="https://joyceykao.github.io/advlanding/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05RCYSM617"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-05RCYSM617');
+  </script>
 </head>
 
 <body>
@@ -79,9 +96,9 @@
     <h1 class="p-3">FEZ Highlights</h1>
     <div class="highlight-box d-lg-flex">
       <div class="container d-flex align-items-center flex-column justify-content-around p-3">
-        <h2>Title of Highlight card</h2>
-        <p>Description of the highlight. Some more words here.</p>
-        <button type="button" class="btn btn-outline-primary">Register & More Info</button>
+        <h2>Finite Element Analysis Lecture Series and Workshop</h2>
+        <h4>Online March 17th and 18th</h4>
+        <a href="https://fez2021.b2match.io/" target="_blank" class="btn btn-outline-primary"> Register here</a>
       </div>
       <div class="container">
         <img src="./assets/media/FEA_workshop_image_text.png" alt="" id="logo" width="100%">
@@ -89,14 +106,39 @@
     </div>
   </div>
 
+  <div class="container d-lg-flex justify-content-between">
+      <div class="container">
+      <a href="https://www.iem.uzh.ch/en.html">
+        <img src="./assets/media/IEM_logo_black_bg.png" height="150px">
+      </a>
+      </div>
+      <div class="container">
+      <a href="https://www.pim.uzh.ch/">
+        <img src="./assets/media/PIM_logo_blackbg.PNG" height="150px">
+      </a>
+      </div>
+      <div class="container">
+      <a href="https://www.grc.uzh.ch/de.html">
+        <img src="./assets/media/GRC_UZH_logo_black_bg.png" height="150px">
+      </a>
+      </div>
+  </div>
+
 <!-- Footer -->
-  <footer class="text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3">
-      © 2020 Copyright:
-      <a href="#">FEA Zürich</a>
-    </div>
-  </footer>
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/FEZ-Finite-Element-Zurich"><i class="fab fa-github"></i></a>
+    <a href="https://finiteelementzurich.slack.com/join/shared_invite/zt-lx6ns6fb-_YBEaCm_tuOz_UfZzNRiwg#/"><i class="fab fa-fw fa-slack"></i></a>
+    <a href="mailto:fezurich@gmail.com?"><i class="fas fa-envelope"></i></a>
+  </div>
+  <div class="footer-links">
+    <ul style="list-style-type:none;text-align:left;">
+      <li>Report a problem or suggest an improvement by<u><a href="https://github.com/FEZ-Finite-Element-Zurich/fez-finite-element-zurich.github.io/issues">opening an inssue</a></u>on our GitHub repository</li>
+      <li>This website content is licensed <u><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY SA 4.0</a></u></li>
+    </ul>
+  </div>
+  </div>
+</div>
 
 <!-- JS scripts needed for Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
