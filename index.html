@@ -1,149 +1,164 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Finite Element Zürich (FEZ)</title>
-  <link rel="shortcut icon" href="assets/media/favicon.jpeg" type="image/x-icon">
-  <meta name="description" content="A virtual hub to share finite element analysis workflows for biomechanics research">
+  <head>
+    <meta charset="UTF-8">
+    <title>Finite Element Zürich (FEZ)</title>
+    <link rel="shortcut icon" href="assets/media/favicon.jpeg" type="image/x-icon">
+    <meta name="description" content="A virtual hub to share finite element analysis workflows for biomechanics research">
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Finite Element Zürich (FEZ)">
-  <meta property="og:description" content="A virtual hub to share finite element analysis workflows for biomechanics research">
-  <meta property="og:image" content="https://joyceykao.github.io/advlanding/assets/media/SM_logo.jpg">
-  <meta name="twitter:image" content="https://joyceykao.github.io/advlanding/assets/media/SM_logo.jpg" type="image/png">
-  <meta property="og:url" content="https://joyceykao.github.io/advlanding/index.html">
-  <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Finite Element Zürich (FEZ)">
+    <meta property="og:description" content="A virtual hub to share finite element analysis workflows for biomechanics research">
+    <meta property="og:image" content="https://joyceykao.github.io/advlanding/assets/media/SM_logo.jpg">
+    <meta name="twitter:image" content="https://joyceykao.github.io/advlanding/assets/media/SM_logo.jpg" type="image/png">
+    <meta property="og:url" content="https://joyceykao.github.io/advlanding/index.html">
+    <meta name="twitter:card" content="summary_large_image">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05RCYSM617"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    gtag('config', 'G-05RCYSM617');
-  </script>
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05RCYSM617"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<body>
+      gtag('config', 'G-05RCYSM617');
+    </script>
+  </head>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <a class="navbar-brand invisible" href="index.html"><img src="./assets/media/FEZLogoHeatMap-300dpi.png" alt="" height="36px"></a>
+  <body>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
+    <!-- START: Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand invisible" href="index.html"><img src="./assets/media/FEZLogoHeatMap-300dpi.png" alt="" height="36px"></a>
 
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="aboutus.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="workflows.html">Workflows</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mailto:fezurich@gmail.com?">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- Logo -->
-  <img src="./assets/media/FEZLogoHeatMap-300dpi.png" alt="" id="logo" width="45%">
-
-<!-- Welcome text -->
-  <div class="container mt-3">
-    <p>
-      Welcome to FEA Zürich (FEZ), a virtual hub to share finite element analysis workflows for biomechanics research. FEZ is a collaboration between the Palaeontological Institute and Museum (PIM) and the Institute of Evolutionary Medicine (IEM). FEZ was founded by Dr. Eva Herbst, Dr. Nicole Webb, and Dylan Bastiaans to unite researchers using FEA to answer biological questions. The goal of this website is to form a finite element analysis community across various institutions and disciplines to increase access to this modeling methodology.
-    </p>
-  </div>
-
-<!-- Cards to About Us and Workflows -->
-  <div class="container pt-3 pb-3">
-    <div class="center flex-row d-lg-flex justify-content-between">
-      <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" href="aboutus.html">
-        <h2>About Us</h2>
-        <p>The people and research behind FEZ who keep the community running.</p>
-      </a>
-
-      <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-6" id="middle-image-video">
-        <video autoplay loop muted width="100%" height="295">
-          <source src="./assets/media/logo_notext_1.mp4" type="video/mp4">
-          <source src="./assets/media/fezlogo.webm" type="video/webm">
-          <source src="./assets/media/logo_notext_1.mov" type="video/mov">
-          Sorry, your browser doesn't support embedded videos.
-        </video>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workflows.html">Workflows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:fezurich@gmail.com?">Contact</a>
+          </li>
+        </ul>
       </div>
+    </nav>
+    <!-- START: Navigation Bar -->
 
-      <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" href="workflows.html">
-        <h2>Workflows</h2>
-        <p>Explore finite element analysis workflows in our GitHub community.</p>
-      </a>
+    <!-- Main Logo -->
+    <img src="./assets/media/FEZLogoHeatMap-300dpi.png" alt="" id="logo" width="45%">
+
+    <!-- START: Welcome text -->
+    <div class="container mt-3">
+      <p>
+        Welcome to FEA Zürich (FEZ), a virtual hub to share finite element analysis workflows for biomechanics research. FEZ is a collaboration between the Palaeontological Institute and Museum (PIM) and the Institute of Evolutionary Medicine (IEM). FEZ was founded by Dr. Eva Herbst, Dr. Nicole Webb, and Dylan Bastiaans to unite researchers using FEA to answer biological questions. The goal of this website is to form a finite element analysis community across various institutions and disciplines to increase access to this modeling methodology.
+      </p>
     </div>
-  </div>
+    <!-- START: Welcome text -->
 
-<!-- Highlights -->
-  <div class="container mt-3 pt-3 pb-3">
-    <h1 class="p-3">FEZ Highlights</h1>
-    <div class="highlight-box d-lg-flex">
-      <div class="container d-flex align-items-center flex-column justify-content-around p-3">
-        <h2>Finite Element Analysis Lecture Series and Workshop</h2>
-        <h4>Online March 17th and 18th</h4>
-        <a href="https://fez2021.b2match.io/" target="_blank" class="btn btn-outline-primary"> Register here</a>
-      </div>
-      <div class="container">
-        <img src="./assets/media/FEA_workshop_image_text.png" alt="" id="logo" width="100%">
+    <!-- START: Section for Cards to About Us and Workflows pages-->
+    <div class="container pt-3 pb-3">
+      <div class="center flex-row d-lg-flex justify-content-between">
+        <!-- START: About Us Card -->
+        <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" href="aboutus.html">
+          <h2>About Us</h2>
+          <p>The people and research behind FEZ who keep the community running.</p>
+        </a>
+        <!-- END: About Us Card -->
+
+        <!-- START: Animated Video Card -->
+        <div class="card col-xs-12 col-sm-12 col-md-12 col-lg-6" id="middle-image-video">
+          <video autoplay loop muted width="100%" height="295">
+            <source src="./assets/media/logo_notext_1.mp4" type="video/mp4">
+            <source src="./assets/media/fezlogo.webm" type="video/webm">
+            <source src="./assets/media/logo_notext_1.mov" type="video/mov">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+        <!-- END: Animated Video Card -->
+
+        <!-- START: Workflow Card -->
+        <a class="card col-xs-12 col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-around" href="workflows.html">
+          <h2>Workflows</h2>
+          <p>Explore finite element analysis workflows in our GitHub community.</p>
+        </a>
+        <!-- END: Workflow Card -->
       </div>
     </div>
-  </div>
+    <!-- END: Section for Cards to About Us and Workflows pages-->
 
-  <div class="container d-lg-flex justify-content-between">
+    <!-- START: Highlights Section-->
+    <div class="container mt-3 pt-3 pb-3">
+      <h1 class="p-3">FEZ Highlights</h1>
+      <!-- START: Highlight Card-->
+      <div class="highlight-box d-lg-flex">
+        <div class="container d-flex align-items-center flex-column justify-content-around p-3">
+          <h2>Finite Element Analysis Lecture Series and Workshop</h2>
+          <h4>Online March 17th and 18th</h4>
+          <a href="https://fez2021.b2match.io/" target="_blank" class="btn btn-outline-primary"> Register here</a>
+        </div>
+        <div class="container">
+          <img src="./assets/media/FEA_workshop_image_text.png" alt="" id="logo" width="100%">
+        </div>
+      </div>
+      <!-- END: Highlight Card-->
+    </div>
+    <!-- END: Highlights Section-->
+
+    <!-- START: Institute Logos-->
+    <div class="container d-lg-flex justify-content-between">
       <div class="container">
-      <a href="https://www.iem.uzh.ch/en.html">
-        <img src="./assets/media/IEM_logo_black_bg.png" height="150px">
-      </a>
+        <a href="https://www.iem.uzh.ch/en.html">
+          <img src="./assets/media/IEM_logo_black_bg.png" height="150px">
+        </a>
       </div>
       <div class="container">
-      <a href="https://www.pim.uzh.ch/">
-        <img src="./assets/media/PIM_logo_blackbg.PNG" height="150px">
-      </a>
+        <a href="https://www.pim.uzh.ch/">
+          <img src="./assets/media/PIM_logo_blackbg.PNG" height="150px">
+        </a>
       </div>
       <div class="container">
-      <a href="https://www.grc.uzh.ch/de.html">
-        <img src="./assets/media/GRC_UZH_logo_black_bg.png" height="150px">
-      </a>
+        <a href="https://www.grc.uzh.ch/de.html">
+          <img src="./assets/media/GRC_UZH_logo_black_bg.png" height="150px">
+        </a>
       </div>
-  </div>
+    </div>
+    <!-- END: Institute Logos-->
 
-<!-- Footer -->
-<div class="footer">
-  <div class="footer-links">
-    <a href="https://github.com/FEZ-Finite-Element-Zurich"><i class="fab fa-github"></i></a>
-    <a href="https://finiteelementzurich.slack.com/join/shared_invite/zt-lx6ns6fb-_YBEaCm_tuOz_UfZzNRiwg#/"><i class="fab fa-fw fa-slack"></i></a>
-    <a href="mailto:fezurich@gmail.com?"><i class="fas fa-envelope"></i></a>
-  </div>
-  <div class="footer-links">
-    <ul style="list-style-type:none;text-align:left;">
-      <li>Report a problem or suggest an improvement by<u><a href="https://github.com/FEZ-Finite-Element-Zurich/fez-finite-element-zurich.github.io/issues">opening an issue</a></u>on our GitHub repository</li>
-      <li>This website content is licensed <u><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY SA 4.0</a></u></li>
-    </ul>
-  </div>
-  </div>
-</div>
+    <!-- START: Footer -->
+    <div class="footer">
+      <div class="footer-links">
+        <a href="https://github.com/FEZ-Finite-Element-Zurich"><i class="fab fa-github"></i></a>
+        <a href="https://finiteelementzurich.slack.com/join/shared_invite/zt-lx6ns6fb-_YBEaCm_tuOz_UfZzNRiwg#/"><i class="fab fa-fw fa-slack"></i></a>
+        <a href="mailto:fezurich@gmail.com?"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-links">
+        <ul style="list-style-type:none;text-align:left;">
+          <li>Report a problem or suggest an improvement by<u><a href="https://github.com/FEZ-Finite-Element-Zurich/fez-finite-element-zurich.github.io/issues">opening an issue</a></u>on our GitHub repository</li>
+          <li>This website content is licensed <u><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY SA 4.0</a></u></li>
+        </ul>
+      </div>
+    </div>
+    <!-- END: Footer -->
 
-<!-- JS scripts needed for Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <!-- BELOW: JS scripts needed for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 
 </html>
