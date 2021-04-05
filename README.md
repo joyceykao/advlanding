@@ -19,9 +19,23 @@ To update the FEZ website, you'll be copy and pasting code chunks or HTML elemen
 
 An element is defined by an opening and closing tag name which is in our example above `<element></element>`
 
-Within the opening tag, you can define attributes for the element that will help format how it looks and functions when a user looks at the website online. Common tags for styling the look of html are `class` and `id`
+Within the opening tag, you can define attributes for the element that will help format how it looks and functions when a user looks at the website online. Common tags for styling the look of html are `class` and `id`. The parameters for the attribute are always contained in double quotation marks.
 
 ### CSS basic syntax
+
+```
+elementname {
+  property: value;
+}
+
+.classname {
+  property: value;
+}
+
+#id {
+  property: value;
+}
+```
 
 
 
