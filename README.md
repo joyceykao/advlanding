@@ -4,10 +4,11 @@ For those maintaining the FEZ landing page. You can use this repository as a sta
 
 ## Website basics
 
-This website was built with HTML, CSS, & a little bit of JavaScript (JS). In a nutshell:
+This website was built with HTML, CSS, & a little bit of JavaScript (JS) using the Bootstrap toolkit. In a nutshell:
 - **HTML** provides the content of a website,
 - **CSS** styles the content (e.g. fonts, colors, spacing, etc.), and
 - **JS** adds interactivity (e.g. animations, or in this case, interacting with external websites via APIs).
+- **Bootstrap** is a library of website components made of pre-written HTML, CSS, JS.
 
 There are many tutorials online that will go into much more depth than what is described here. JS will not be explained...you shoud not have to touch anything in the JS file to update the FEZ website.
 
