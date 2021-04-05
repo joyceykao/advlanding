@@ -8,3 +8,13 @@ This website was built with HTML, CSS, & a little bit of JavaScript (JS). In a n
 - **HTML** provides the content of a website,
 - **CSS** styles the content (e.g. fonts, colors, spacing, etc.), and
 - **JS** adds interactivity (e.g. animations, or in this case, interacting with external websites via APIs).
+
+There are many tutorials online that will go into much more depth than what is described here.
+
+### HTML basic syntax
+
+`<element attr="some_attribute"> [...content...]</element>`
+
+
+
+
