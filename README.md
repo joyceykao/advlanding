@@ -38,5 +38,8 @@ elementname {
 ```
 
 
+### [Bootstrap](https://getbootstrap.com/)
+
+Bootstrap is a front-end toolkit created by Twitter. It's a library of HTML, CSS, and JS scripts so one can mix and match website components (e.g. navbars, cards, containers, etc.) to quickly put together websites by simply indicating different classes in the `class` attribute here. Not covered here, nor should you have to mess with it, but you can find all you need to know about it on the Bootstrap website: [https://getbootstrap.com/](https://getbootstrap.com/).
 
 
