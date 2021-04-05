@@ -19,7 +19,7 @@ To update the FEZ website, you'll be copy and pasting code chunks or HTML elemen
 
 An element is defined by an opening and closing tag name which is in our example above `<element></element>`
 
-Within the opening tag, you can define attributes for the element that will help format how it looks and functions when a user looks at the website online. Common tags for styling the look of html are `class` and `id`. The parameters for the attribute are always contained in double quotation marks.
+Within the opening tag, you can define attributes for the element that will help format how it looks and functions when a user looks at the website online. Common tags for styling the look of html are `class` and `id`. The parameters for the attribute are always contained in double quotation marks. An HTML elmement can have multiple classes and id's applied to it.
 
 ### CSS basic syntax
 
@@ -36,7 +36,13 @@ elementname {
   property: value;
 }
 ```
+Basic CSS is of the same format with the *target* name indicated outside of the curly braces with all properties/values that should be applied to the *target* within the braces.
 
+The *target* can be a whole group of general elements like paragraphs (`<p></p>`), headers (`<h1></h1>`), etc.
+
+You can also add styling using a `class` or `id` attribute (see above about html attributes). To indcate a `class` a period must precede the classname. In the same manner, `id`'s are preceded by `#` in CSS code.
+
+*Classes* are used on repeating elements/components in a webpage where as *id*'s are normally used for specific elements when further styling is needed.
 
 ### [Bootstrap](https://getbootstrap.com/)
 
