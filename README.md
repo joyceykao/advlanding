@@ -1,6 +1,8 @@
 # Landing Page for [FEZurich](https://fez-finite-element-zurich.github.io/)
 
-For those maintaining the FEZ landing page. You can use this repository as a staging environment (i.e. an imitation of the real thing in the FEZ organization) to test if your changes to the website are what you envisioned before 'deploying' it to the actual landing page (i.e. forked repository in FEZ organization).
+For those maintaining the FEZ landing page. You can use the original repository ([advlanding](https://github.com/joyceykao/advlanding)) in the creators's GH account (@joyceykao) as a staging environment (i.e. an imitation of the real thing in the FEZ organization) to test if your changes to the website are what you envisioned before 'deploying' it to the actual landing page (i.e. forked repository in FEZ organization).
+
+[Link to 'live' staging environment](https://joyceykao.github.io/advlanding/)
 
 ## Website basics
 
