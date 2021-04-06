@@ -6,13 +6,15 @@ For those maintaining the FEZ landing page. You can use the original repository 
 
 ## Website basics
 
-This website was built with HTML, CSS, & a little bit of JavaScript (JS) using the Bootstrap toolkit. In a nutshell:
+This website was built with HTML, CSS, & a little bit of JavaScript (JS) using the Bootstrap toolkit. Web browsers like Chrome, Firefox, Safari, etc. interpret the HTML, CSS, and JS file sent by the server hosting your website. Beware that not all websites will be compatible/interpreted the same on every browser, which is why sometimes websites show up *weird* in different browsers.
+
+In a nutshell, here is what each file or part of a website does:
 - **HTML** provides the content of a website,
 - **CSS** styles the content (e.g. fonts, colors, spacing, etc.), and
 - **JS** adds interactivity (e.g. animations, or in this case, interacting with external websites via APIs).
 - **Bootstrap** is a library of website components made of pre-written HTML, CSS, JS.
 
-There are many tutorials online that will go into much more depth than what is described here. JS will not be explained...you shoud not have to touch anything in the JS file to update the FEZ website.
+There are many tutorials online that will go into much more depth than what is described here. JS will not be explained...you shoud not have to touch anything in the JS file to update the FEZ website (nor the CSS files).
 
 ### HTML basic syntax
 

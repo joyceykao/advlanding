@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <!-- The head of an HTML file contains all the meta information belonging to a website. Its important for how the site appears on social media sites and how it's found via internet searches. -->
+  <head>
+    <meta charset="UTF-8">
+    <title>FEZ website brick library</title>
+    <link rel="shortcut icon" href="assets/media/favicon.jpeg" type="image/x-icon">
+    <meta name="description" content="A virtual hub to share finite element analysis workflows for biomechanics research">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This line imports the Bootstrap CSS sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- This line imports our local CSS sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="container mt-3 pt-3 pb-3"> <!-- This is the container that contains the highlight card: DON'T COPY THIS -->
+      <h1>HIGHLIGHT CARD TEMPLATES that goes in index.html</h1>
+
+      <h2>Highlight card template with image on right</h2>
+
+      <!-- START (COPY BELOW): Highlight Card image on RIGHT-->
+      <div class="highlight-box d-lg-flex">
+        <div class="container d-flex align-items-center flex-column justify-content-around p-3">
+          <h2>THIS IS THE MAIN TITLE OF THE HIGHLIGHT</h2>
+          <h4>HERE IS A SUBTITLE</h4>
+          <p>You can add a short description here if you want or comment this out</p>
+          <a href="#" target="_blank" class="btn btn-outline-primary"> Click, Register, Action Word Button</a>
+        </div>
+        <div class="container">
+          <!-- The only thing that needs to be changed here is the src path for the image which is the path relative to this html file -->
+          <img src="./assets/media/FEA_workshop_image_text.png" alt="" id="logo" width="100%">
+        </div>
+      </div>
+      <!-- END (COPY ABOVE): Highlight Card image on RIGHT-->
+
+      <h2>Highlight card template with image on left</h2>
+      <!-- START (COPY BELOW): Highlight Card image on LEFT-->
+      <div class="highlight-box d-lg-flex flex-row-reverse">
+        <div class="container d-flex align-items-center flex-column justify-content-around p-3">
+          <h2>THIS IS THE MAIN TITLE OF THE HIGHLIGHT</h2>
+          <h4>HERE IS A SUBTITLE</h4>
+          <p>You can add a short description here if you want or comment this out</p>
+          <a href="#" target="_blank" class="btn btn-outline-primary"> Click, Register, Action Word Button</a>
+        </div>
+        <div class="container">
+          <!-- The only thing that needs to be changed here is the src path for the image which is the path relative to this html file -->
+          <img src="./assets/media/FEA_workshop_image_text.png" alt="" id="logo" width="100%">
+        </div>
+      </div>
+      <!-- END (COPY ABOVE): Highlight Card image on LEFT-->
+
+    </div> <!-- This is the end tag of the container that contains the highlight -->
+
+    <div class="container mt-5 pt-3 pb-3">
+      <h1>Card for Founder section in about.html</h1>
+
+      <!-- START: Founder #X -->
+      <div class="founder-bio-card align-items-start d-lg-flex pt-3 pb-3">
+        <div class="d-flex align-items-center flex-column justify-content-around ml-3 mr-3">
+          <img src="./assets/media/Eva_Herbst_edited.jpg" class="avatar" alt="">
+          <h3>NAME HERE</h3>
+          <h4>Postiion (Affiliation)</h4>
+          <div class="links">
+            <a href=#><i class="fab fa-fw fa-researchgate fa-2x"></i></a>
+            <a href=#><i class="fab fa-fw fa-github fa-2x"></i></a>
+            <a href=#><i class="fab fa-fw fa-twitter fa-2x"></i></a>
+            <a href=#><i class="far fa-fw fa-address-card fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="container d-flex align-items-center text-lg-left pt-3 ml-lg-3">
+          <p class="text-justify">Bio text goes here
+          <br> <br>
+          Keywords: Word, Word, Word
+          </p>
+        </div>
+      </div>
+      <!-- END: Founder #X -->
+
+    </div>
+
+    <div class="container mt-5 pt-3 pb-3">
+      <h1>Card for Members section in about.html</h1>
+
+      <!-- START: Founder #X -->
+            <!-- START: Member #3 -->
+        <div class="member-card d-flex align-items-center flex-column justify-content-around ml-3 mr-3">
+          <img src="./assets/media/Jonas.jpg" class="avatar" alt="">
+          <h3>NAME HERE</h3>
+          <h4>TITLE</h4>
+          <h4>Affiliation</h4>
+        </div>
+        <!-- END: Member #3 -->
+
+    </div>
+
+    <div class="container mt-5 pt-3 pb-3">
+      <!-- START: Research Project Card with picture on RIGHT -->
+      <div class="d-lg-flex pt-3 pb-3">
+        <div class="container d-flex align-items-center flex-column justify-content-around">
+          <h2>Title</h2>
+          <h4><em>Affiliation</em></h4>
+          <p>Description of project
+          </p>
+        </div>
+        <div class="container">
+          <img src="./assets/media/fossil_skull_fea_horizontal_PIM_section.png" alt="" id="logo" width="100%">
+        </div>
+      </div>
+      <!-- END: Research Project Card with picture on RIGHT -->
+
+      <!-- START: Research Project Card with picture on LEFT -->
+      <div class="d-lg-flex flex-lg-row-reverse pt-3 pb-3">
+        <div class="container d-flex align-items-center flex-column justify-content-around">
+          <h2>Title</h2>
+          <h4><em>Affiliation</em></h4>
+          <p>Description
+          </p>
+        </div>
+        <div class="container">
+          <img src="./assets/media/childbirth_IIEM_section.png" alt="" id="logo" width="100%">
+        </div>
+      </div>
+      <!-- END: Research Project Card with picture on LEFT -->
+
+    </div>
+
+  <!-- BELOW: JS scripts needed for Bootstrap that need to be on every page for the Bootstrap library to properly function -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
